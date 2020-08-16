@@ -9,44 +9,93 @@
 		.nav-link {
 			margin: 0 .5rem 0 0 ;
 		}
+
+		body {
+		    position: relative;
+ 		}
+  		
 	</style>
-
 </head>
-<body>
 
-<nav class="navbar navbar-dark navbar-expand-lg bg-dark" >
-  <a class="navbar-brand mb-0 h1" href="#">
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark ">  
+	<a class="navbar-brand mb-0 h1" href="#">
   	&#x4B5; Yusuf Temiz
-  </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
+ 	</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+  <span class="navbar-toggler-icon"></span>
   </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+  <ul class="navbar-nav" >
+    <li class="nav-item">
+      <a class="nav-link" href="#section1">Merhaba</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#section2">Hakkımda</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#section3">Projelerim</a>
+    </li>
+    <li class="nav-item">
         <a class="nav-link" href="https://github.com/yusuftemiz">Github</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="https://www.linkedin.com/in/yusuftemiz/">Linkedin</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Twitter</a>
+        <a class="nav-link" href="https://twitter.com/Yusuf_temiz2">Twitter</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Instagram</a>
+        <a class="nav-link" href="https://www.instagram.com/yusuftemiz2/">Instagram</a>
       </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      
-    </form>
-  </div>
+  </ul>
+</div>
 </nav>
+
+<div id="section1" class="container-fluid bg-dark text-white" style="padding-top:70px;padding-bottom:70px">
+  <h1>Merhaba</h1>
+  <p>Buralarda bir yerlerde benim hakkımda bilgileri ve üzerinde çalıştığım projelerimi bulabilirsin.
+  </p> <br> <br>
+  <p>Bulamıyorsan kesinlikle benim hatamdır, daha sonra tekrar deneyin. :)</p>
+</div>
+<div id="section2" class="container-fluid border" style="padding-top:70px;padding-bottom:70px">
+	<h1>Hakkımda</h1>
+  		<div class="container">
+  		<div class="row">
+  			<div class="card" style="width:300px">
+    			<img class="card-img-top" src="image/0.jpg" alt="Card image" style="width:100%">
+    			<div class="card-body">
+      				<h4 class="card-title">Yusuf Temiz</h4>
+      				<p class="card-text">Doğum Tarihi: 21 Temmuz 1997</p>
+      				<p class="card-text">Doğum Yeri: Tokat/Erbaa</p>
+      				<p class="card-text">Email: yusuftemiz22@gmail.com</p>
+    			</div>
+  			</div>
+  			<div class="col"> <br>
+  				<p>İlkokul ve liseyi doğduğum şehirde okudum. Üniversite sınavında Samsun Ondokuz Mayıs Üniversitesini 
+  				kazandım ve 4 yıllık Bilgisayar Mühendisliği bölümünü bitirmek üzereyim. </p>
+  				<p>Okul derslerim gereği Ruby, C, Java, Sql, Android öğrendim,</p> 
+  				<p>C# dilinde Microsoft sql server management studio kullanarak veritabanlı masaüstü uygulaması geliştirdim, </p>
+  				<p>C++ dilinde Omnet++ kütüphanesini kullanarak projeler geliştirdim, </p>
+  				<p>Bitirme projem kapsamında PHP dilinde bir web yazılımı geliştirdim, </p>
+  				<p>Kodular platformu üzerinden Twitter ile ilgili Android mobil uygulama geliştirdim.</p>
+  				<P>21 Temmuz-5 Ağustos 2017 tarihleri arasında Abant İzzet Baysal Üniversitesi'nde düzenlenen Linux Yaz Kampı'nın Linux Sistem Yönetimi(1.düzey) kursuna katıldım.</p> 
+  				<p>Temmuz-Ağustos 2018 tarihlerinde Samsun Atakum Belediyesi'nin Bilgi İşlem biriminde 30 iş günü zorunlu stajımı yaptım. </p>
+  				<p>Web tasarımı ve uygulamaları geliştirmek, mobil uygulamaları geliştirmek, yazılım alanında kendimi geliştirmek istiyorum. </p>
+  			</div>
+  		</div>
+		</div>
+
+</div>
+<div id="section3" class="container-fluid bg-dark text-white" style="padding-top:70px;padding-bottom:70px">
+  <h1>Projelerim</h1>
+  <p>ÇOK YAKINDA!</p>
+  </div>
+	
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/popper.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
 </body>
 </html>
