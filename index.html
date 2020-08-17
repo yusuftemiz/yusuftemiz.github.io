@@ -14,7 +14,28 @@
 		body {
 		    position: relative;
  		}
-  		
+
+ 		.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: black;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: black;
+}
+
   		.footer{border-top:1px solid #eaecef;text-align:center;color:#4e6e8e}
 	</style>
 </head>
@@ -22,7 +43,7 @@
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark ">  
-	<a class="navbar-brand mb-0 h1" href="#">
+	<a class="navbar-brand mb-0 h1" href="yusuftemiz.github.io">
   	&#x4B5; Yusuf Temiz
  	</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -90,13 +111,136 @@
 		</div>
 
 </div>
-<div id="section3" class="container-fluid bg-dark text-white" style="padding-top:70px;padding-bottom:70px">
-  <h1>Projelerim</h1>
-  <p>ÇOK YAKINDA!</p>
+<div id="section3" class="container-fluid bg-dark" style="padding-top:70px;padding-bottom:70px">
+  <h1 class="text-white">Projelerim</h1>
+  <br>
+  <div class="container">
+  <div id="accordion">
+    <div class="card">
+      <div class="card-header bg-dark">
+        <a class="card-link text-white" data-toggle="collapse" href="#collapseOne">
+        Barkodlu Stok ve Satış Sistemi - Masaüstü Uygulaması
+        </a>
+      </div>
+      <div id="collapseOne" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+        <p>Visual Studio üzerinden C# programlama diliyle yazılmıştır. DevExpress kullanılmıştır. Microsoft SQL Server Management Studio aracılığıyla veritabanı geliştirilmiştir. Barkod okutmalı hem stok hem satış sistemi olarak kullanılabilecek bir masaüstü uygulamasıdır. Uygulama içerisinden görüntüler aşağıdadır.</p>
+
+        <div id="demo1" class="carousel slide" data-ride="carousel" style="text-align: center;">
+		<div class="carousel-inner" >
+    		<div class="carousel-item active" >
+      			<img src="image/Barkod/1.jpg" alt="Tw1" style="width: 100%; height: 100%">
+    		</div>
+    		<div class="carousel-item">
+      			<img src="image/Barkod/2.jpg" alt="Tw2" style="width: 100%; height: 100%">
+    		</div>
+    		<div class="carousel-item">
+      			<img src="image/Barkod/3.jpg" alt="Tw3" style="width: 100%; height: 100%">
+    		</div>
+    		<div class="carousel-item">
+      			<img src="image/Barkod/4.jpg" alt="Tw4" style="width: 100%; height: 100%">
+    		</div>
+    		<div class="carousel-item">
+      			<img src="image/Barkod/5.jpg" alt="Tw5" style="width: 100%; height: 100%">
+    		</div>
+    		<div class="carousel-item">
+      			<img src="image/Barkod/6.jpg" alt="Tw6" style="width: 100%; height: 100%">
+    		</div>
+    		<div class="carousel-item">
+      			<img src="image/Barkod/7.jpg" alt="Tw7" style="width: 100%; height: 100%">
+    		</div>
+  		</div>
+  
+  		<a class="carousel-control-prev" href="#demo1" data-slide="prev">
+    		<span class="carousel-control-prev-icon"></span>
+  		</a>
+  		<a class="carousel-control-next" href="#demo1" data-slide="next">
+    		<span class="carousel-control-next-icon"></span>
+  		</a>
+		</div>
+
+
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header bg-dark">
+        <a class="collapsed card-link text-white" data-toggle="collapse" href="#collapseTwo">
+        Personel Yönetim Sistemi - Web Sitesi
+      </a>
+      </div>
+      <div id="collapseTwo" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+        ÇOK YAKINDA.
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header bg-dark">
+        <a class="collapsed card-link text-white" data-toggle="collapse" href="#collapseThree">
+        Twitter RT&Fav Uygulaması - Android Mobil Uygulama
+        </a>
+      </div>
+      <div id="collapseThree" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+        <p>Kodular platformu üzerinden geliştirilmiştir. Google Firebase Database, Onesignal kullanılmıştır. Twitter kullanıcılarının birbirleriyle etkileşimini arttırmasını sağlayan RT&Fav uygulamasıdır. Uygulama içerisinden görüntüler aşağıdadır.</p>
+
+        <div id="demo" class="carousel slide" data-ride="carousel" style="text-align: center;">
+		<div class="carousel-inner" >
+    		<div class="carousel-item active" >
+      			<img src="image/TwitteRT/1.jpg" alt="Tw1" >
+    		</div>
+    		<div class="carousel-item">
+      			<img src="image/TwitteRT/2.jpg" alt="Tw2" >
+    		</div>
+    		<div class="carousel-item">
+      			<img src="image/TwitteRT/3.jpg" alt="Tw3" >
+    		</div>
+    		<div class="carousel-item">
+      			<img src="image/TwitteRT/4.jpg" alt="Tw4" >
+    		</div>
+    		<div class="carousel-item">
+      			<img src="image/TwitteRT/5.jpg" alt="Tw5" >
+    		</div>
+    		<div class="carousel-item">
+      			<img src="image/TwitteRT/6.jpg" alt="Tw6" >
+    		</div>
+    		<div class="carousel-item">
+      			<img src="image/TwitteRT/7.jpg" alt="Tw7" >
+    		</div>
+    		<div class="carousel-item">
+      			<img src="image/TwitteRT/8.jpg" alt="Tw8" >
+    		</div>
+    		<div class="carousel-item">
+      			<img src="image/TwitteRT/9.jpg" alt="Tw9" >
+    		</div>
+    		<div class="carousel-item">
+      			<img src="image/TwitteRT/10.jpg" alt="Tw10" >
+    		</div>
+  		</div>
+  
+  		<a class="carousel-control-prev " href="#demo" data-slide="prev">
+    		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  		</a>
+  		<a class="carousel-control-next " href="#demo" data-slide="next">
+    		<span class="carousel-control-next-icon"></span>
+  		</a>
+		</div>
+
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="footer bg-dark text-white" >
+</div>
+
+
+
+</div>
+
+
+<div class="footer bg-dark text-white" >
     Yusuf Temiz Copyright © 2020
-  </div>
+</div>
 	
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/popper.min.js"></script>
