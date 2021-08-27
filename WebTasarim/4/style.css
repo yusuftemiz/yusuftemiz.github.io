@@ -1,0 +1,170 @@
+
+*{  /* Sayfadaki her şey için */
+	margin: 0; /* Dışında kenar boşluğu olmasın */
+	padding: 0; /* İçinde kenar boşluğu olmasın */
+	box-sizing: border-box; /* Taşma olmasın */
+	border: 0; /* Kenar çizgisi olmasın */
+}
+
+a,
+a:link, /* Ziyaret edilmemiş linkler için */
+a:visited{ /* Ziyaret edilmiş linkler için */
+	text-decoration: none; /* Alt çizgi olmasın */
+	outline: none; /* Basıldığında kenar çizgisi çıkmasın */
+	font-size: 20px;	
+	color: black;
+}
+
+a h2:hover{ /* Üstüne geldiğinde */
+	opacity: 0.8; /* Opaklık katması için */
+}
+
+ul{
+	display: flex; /* Yan yana sıralanması için */
+}
+
+li{
+	list-style: none; /* Noktaları kaldırmak için */
+	margin-left: 30px; /* Sol taraftaki dış boşluğu */
+}
+
+body{
+	background-image: url(back.jpg); /* Arka plan resmi*/
+	background-position: center; /* Ortalamak için */
+	background-size: cover; /* Tamamını kaplaması */
+	background-attachment: fixed; /* Sabit kalması için */
+	height: 100vh; /* Görünen ekran boyutu */
+}
+
+header{
+	display: flex;
+	justify-content: center;
+}
+
+.navbar-glass{
+	margin-top: 5px;
+	background: white;
+	width: 70%;                      /* lineer olarak renk açıklığı,, sağ alta doğru açılma olmasını istiyorum,, renkleri belirtiyorum */
+	background: linear-gradient( 
+		to right bottom,
+		rgba(255,255,255,0.7),
+		rgba(255,255,255,0.3)
+		);
+	border-radius: 2rem; /* köşelerin ovalleşmesini istiyorum */
+	backdrop-filter: blur(6rem); /* blur değeri veriyorum arkaplan çok gözükmesin */
+	display: flex;
+	flex-direction: column;
+}
+
+.dashboard,
+.logo{
+	display: flex;
+	text-align: center;
+	align-items: center;
+}
+
+.dashboard{
+	background: linear-gradient(
+		to right bottom,
+		rgba(255,255,255,0.7),
+		rgba(255,255,255,0.3)
+		);
+	border-radius: 2rem;
+	justify-content: space-between;
+}
+
+.logo{
+	letter-spacing: 2px;
+}
+
+.logo img{
+	height: 60px;
+	width: 80px;
+}
+
+nav{
+	display: flex;
+	justify-content: center;
+}
+
+.social i{
+	margin: 15px; /* İconlar arasındaki mesafe */
+}
+
+.social i:hover,
+.buttons i:hover{ /* Üstüne geldiğinde */
+	opacity: 0.8; /* Opaklık katması için */
+	cursor:pointer; /* Fare imlecinin işaret parmağı olması için */
+}
+
+.glass2{
+	margin: 5px auto;
+	background: white;
+	width: 70%;                      /* lineer olarak renk açıklığı,, sağ alta doğru açılma olmasını istiyorum,, renkleri belirtiyorum */
+	background: linear-gradient( 
+		to right bottom,
+		rgba(255,255,255,0.7),
+		rgba(255,255,255,0.3)
+		);
+	border-radius: 2rem; /* köşelerin ovalleşmesini istiyorum */
+	backdrop-filter: blur(2rem); /* blur değeri veriyorum arkaplan çok gözükmesin */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#pages{
+	height: 75vh;
+	width: 100%;
+	border-radius: 2rem;
+	overflow: hidden;
+}
+
+#pages .turn-page{
+	-webkit-background-size: 100% 100%;
+}
+
+.home,
+.hard,
+.end{
+	background: rgba(255,255,255,0.8);
+	height: 75vh;
+	width: 100%;
+	border-radius: 2rem;
+}
+
+.home,
+.end{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.home p, 
+.end p{
+	font-size: 50px;
+}
+
+.page1,
+.page2,
+.page3{
+	height: 75vh;
+	width: 100%;
+	border-radius: 2rem;
+}
+
+.page1{
+	background-image: url(1.jpg);
+}
+
+.page2{
+	background-image: url(2.jpg);
+}
+
+.page3{
+	background-image: url(3.jpg);
+}
+
+.buttons i{
+	margin: 20px;
+}

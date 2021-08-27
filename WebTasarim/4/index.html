@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tek Sayfa Header</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+	<header>
+		<section class="navbar-glass">
+			<div class="dashboard">
+				<div class="logo">
+					<img src="logo.png" alt="">
+					<h3>bi' dünya yaz | </h3>
+					<p>Durma sende bi' dünya yaz</p>
+				</div>
+				<div class="social">
+					<i class="fab fa-facebook-f"></i>
+					<i class="fab fa-twitter"></i>
+					<i class="fab fa-instagram"></i>
+					<i class="fab fa-youtube"></i>
+				</div> 
+			</div>
+			<nav>
+				<ul>
+					<li><a href="#">Anasayfa</a></li>
+					<li><a href="#">Hakkımızda</a></li>
+					<li><a href="#">Projelerimiz</a></li>
+					<li><a href="#">Referanslarımız</a></li>
+					<li><a href="#">İletişim</a></li>
+				</ul>
+			</nav>
+		</section>
+	</header>
+	<article class="glass2">
+		<div id="pages">
+			<div class="home"><p>Çalışmalar</p></div>
+			<div class="hard"></div>
+			<div class="page1"></div>
+			<div class="page2"></div>
+			<div class="page3"></div>
+			<div class="end"><p>SON</p></div>
+		</div>
+		<div class="buttons">
+			<i class="fas fa-chevron-left" id="left"></i>
+			<i class="fas fa-chevron-right" id="right"></i>
+		</div>
+	</article>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+	<script src="turn.js"></script>
+	<script type="text/javascript">
+		var oTurn = $('#pages').turn({gradients: true, acceleration: true});
+
+		$("#left").click(function(e){
+			e.preventDefault();
+			oTurn.turn("previous");
+		});
+
+		$("#right").click(function(e){
+			e.preventDefault();
+			oTurn.turn("next");
+		});
+	</script>
+</body>
+</html>

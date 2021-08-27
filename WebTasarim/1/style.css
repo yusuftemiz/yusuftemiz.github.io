@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=WindSong:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+
+
+*,  /* Sayfadaki her şey için */
+*::before,
+*::after{
+	margin: 0; /* Dışında kenar boşluğu olmasın */
+	padding: 0; /* İçinde kenar boşluğu olmasın */
+	box-sizing: border-box; /* Taşma olmasın */
+	border: 0; /* Kenar çizgisi olmasın */
+	color: #fff;
+}
+
+a,
+a:link, /* Ziyaret edilmemiş linkler için */
+a:visited{ /* Ziyaret edilmiş linkler için */
+	text-decoration: none; /* Alt çizgi olmasın */
+	outline: none; /* Basıldığında kenar çizgisi çıkmasın */
+	font-size: 20px;	
+}
+
+a:hover{ /* Üstüne geldiğinde */
+	opacity: 0.8; /* Opaklık katması için */
+}
+
+ul{
+	display: flex; /* Yan yana sıralanması için */
+}
+
+li{
+	list-style: none; /* Noktaları kaldırmak için */
+	margin-left: 30px; /* Sol taraftaki dış boşluğu */
+}
+
+.social{
+	max-width: 1170px; /* Maksimum genişliği belirledik */
+	margin: 0 auto; /* Alt ve üst dış mesafe yok, sağ sol dış mesafeyi otomatik olarak belirle 
+					div in bir genişlik değeri varsa bu sayede ortalanır */
+	text-align: right; /* Sağ tarafa yaslamak için */
+}
+
+.social i{
+	margin: 15px; /* İconlar arasındaki mesafe */
+}
+
+.social i:hover{ /* Üstüne geldiğinde */
+	opacity: 0.8; /* Opaklık katması için */
+	cursor:pointer; /* Fare imlecinin işaret parmağı olması için */
+}
+
+.container{
+	max-width: 1170px;
+	margin: 0 auto;
+	margin-top: -30px;
+}
+
+.header{
+	background-image: url(back.jpg); /* Arka plan resmi*/
+	background-position: center; /* Ortalamak için */
+	background-size: cover; /* Tamamını kaplaması */
+	background-attachment: fixed; /* Sabit kalması için */
+	height: 100vh; /* Görünen ekran boyutu */
+	font-family: 'WindSong', cursive;
+}
+
+.header-navbar{
+	display: flex; /* Yan yana sıralanması için */
+	align-items: center; /* Ortalama */
+	justify-content: space-between; /* İlk nesne başta, son nesne sonda olacak şekilde nesneler eşit olarak kapsayıcının içerisinde dizilirler. */
+}
+
+.logo{
+	font-size: 35px;
+	letter-spacing: 2px; /* Harf aralığı için */
+}
+
+.header-text{
+	position: absolute; /* Sayfadaki yeri için top, left değeri verebilmek için */
+	top: 75%;
+	left: 10%;
+	width: 20%;
+	font-family: 'Indie Flower', cursive;
+}
+
+h1{
+	font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 1000px) {
+	.social{
+		text-align: center;
+	}
+
+	.container{
+		text-align: center;
+		margin-top: 0px;
+	}
+
+	.header-navbar{
+		flex-direction: column; /* Aynı sütundaymış gibi alt alta sıralamak için */
+	}
+	
+	.header-text{
+		width: 80%;
+	}
+}
+
+@media only screen and (max-width: 700px){
+	ul{
+		flex-direction: column;
+	}
+
+	li{
+		font-weight: bold;
+	}
+}

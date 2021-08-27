@@ -1,0 +1,125 @@
+
+*{  /* Sayfadaki her şey için */
+	margin: 0; /* Dışında kenar boşluğu olmasın */
+	padding: 0; /* İçinde kenar boşluğu olmasın */
+	box-sizing: border-box; /* Taşma olmasın */
+	border: 0; /* Kenar çizgisi olmasın */
+}
+
+a,
+a:link, /* Ziyaret edilmemiş linkler için */
+a:visited{ /* Ziyaret edilmiş linkler için */
+	text-decoration: none; /* Alt çizgi olmasın */
+	outline: none; /* Basıldığında kenar çizgisi çıkmasın */
+	font-size: 20px;	
+	color: black;
+}
+
+a h2:hover{ /* Üstüne geldiğinde */
+	opacity: 0.8; /* Opaklık katması için */
+}
+
+main{
+	background-image: url(back.jpg); /* Arka plan resmi*/
+	background-position: center; /* Ortalamak için */
+	background-size: cover; /* Tamamını kaplaması */
+	background-attachment: fixed; /* Sabit kalması için */
+	height: 100vh; /* Görünen ekran boyutu */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.glass{
+	background: white;
+	height: 80vh;
+	width: 70%;                      /* lineer olarak renk açıklığı,, sağ alta doğru açılma olmasını istiyorum,, renkleri belirtiyorum */
+	background: linear-gradient( 
+		to right bottom,
+		rgba(255,255,255,0.7),
+		rgba(255,255,255,0.3)
+		);
+	border-radius: 2rem; /* köşelerin ovalleşmesini istiyorum */
+	backdrop-filter: blur(2rem); /* blur değeri veriyorum arkaplan çok gözükmesin */
+	display: flex;
+}
+
+.dashboard{
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: space-between; /* İlk nesne başta, son nesne sonda olacak şekilde nesneler eşit olarak kapsayıcının içerisinde dizilirler. */
+	background: linear-gradient(
+		to right bottom,
+		rgba(255,255,255,0.7),
+		rgba(255,255,255,0.3)
+		);
+	border-radius: 2rem;
+}
+
+.user h3{
+	margin-top: -30px;
+}
+
+.status{
+	flex: 2;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin: auto 3rem;
+}
+
+.social i{
+	margin: 15px; /* İconlar arasındaki mesafe */
+}
+
+.social i:hover{ /* Üstüne geldiğinde */
+	opacity: 0.8; /* Opaklık katması için */
+	cursor:pointer; /* Fare imlecinin işaret parmağı olması için */
+}
+
+@media only screen and (max-width: 790px) {
+	.glass{
+		flex-direction: column;
+	}
+
+	.dashboard{
+		flex-direction: row;
+		align-items: center;
+	}
+
+	.social{
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+@media only screen and (max-width: 640px) {
+	.glass{
+		height: 90vh;
+	}
+
+	.dashboard{
+		flex-direction: column;
+	}
+
+	.social{
+		flex-direction: row;
+	}
+
+	.status{
+		overflow: auto;
+	}
+
+	::-webkit-scrollbar {
+         width: 4px;	/* Sadece sağ taraftaki scroll a etki eder. */
+         background: auto;
+    }
+
+    ::-webkit-scrollbar-thumb {
+         background: rgba(255,255,255,0.7);
+         border-radius: 7rem;
+      }
+
+}
