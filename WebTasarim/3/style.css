@@ -177,7 +177,10 @@ nav{
 		height: 17vh;
 		top: 3vh;
 		text-align: center;
-		width: 40%;
+	}
+
+	.cart{
+		display: none;
 	}
 
 	.text p{
