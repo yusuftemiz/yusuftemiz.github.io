@@ -175,13 +175,11 @@ nav{
 		flex-direction: column;
 		position: absolute;
 		height: 17vh;
-		top: 3vh;
+		top: 2vh;
 		text-align: center;
+		left: 23vh;
 	}
 
-	.cart{
-		display: none;
-	}
 
 	.text p{
 		font-size: 15px;
