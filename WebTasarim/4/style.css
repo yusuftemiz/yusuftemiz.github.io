@@ -177,6 +177,10 @@ nav{
 		flex-direction: column;
 	}
 
+	ul{
+		justify-content: center;
+	}
+
 	.dashboard{ 
 		flex-direction: column;
 	}
@@ -184,5 +188,10 @@ nav{
 	.glass2{
 		height: 60vh;
 		width: 100%;
+	}
+
+	.home p, 
+	.end p{
+		font-size: 25px;
 	}
 }
